@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spa Booking</title>
+  <style>
+     body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url("img/brspa.jpg");
+    background-size: cover; 
+  }
+    .header {
+      background-color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo img {
+      height: 50px;
+    }
+    
+    nav {
+      margin-left: auto;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      position: relative;
+      margin-right: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      right: 0; /* Align dropdown to the right */
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+      width: 100%; /* Set width to 100% */
+      box-sizing: border-box; /* Include padding in width calculation */
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    
+    .booking-form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .elem-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #5cb85c;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #4cae4c;
+    }
+    
+    @media (max-width: 600px) {
+      .booking-form .elem-group.inlined {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="header">
+    <div class="logo">
+      <img src="img/VAIGAi_page-0001-removebg-preview.png" height="100" width="200" alt="Hotel Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <form class="booking-form" action="#" method="post">
+    <div class="elem-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="visitor_name" placeholder="Enter your name" pattern="[A-Za-z\s]{3,50}" required>
+    </div>
+    <div class="elem-group">
+      <label for="email">Your E-mail</label>
+      <input type="email" id="email" name="visitor_email" placeholder="Enter your email" required>
+    </div>
+    <div class="elem-group">
+      <label for="phone">Your Phone</label>
+      <input type="tel" id="phone" name="visitor_phone" placeholder="Enter your phone number" pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkin-date">Date</label>
+      <input type="date" id="checkin-date" name="checkin" required>
+    </div>
+    <div class="elem-group inlined">
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time" required>
+    </div>
+    <div class="elem-group">
+      <label for="booking-type">Select Booking Type</label>
+      <select id="booking-type" name="booking_type" required>
+        <option value="">Choose an option</option>
+        <option value="Fish Pedicure">Fish Pedicure</option>
+        <option value="Unisex Massage">Massage</option>
+        <option value="Makeup Parlour">Makeup Parlour</option>
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="gender">Select Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">Choose an option</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div class="elem-group">
+      <label for="message">Additional Information</label>
+      <textarea id="message" name="visitor_message" placeholder="Enter any additional information"></textarea>
+    </div>
+    <button type="submit">Book Now</button>
+  </form>
+</body>
+</html>

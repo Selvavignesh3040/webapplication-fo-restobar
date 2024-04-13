@@ -1,0 +1,306 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #D1EBD1; /* Light green background */
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative; 
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-light {
+  background-color: white; /* White background */
+}
+
+.bg-primary {
+  background-color: #30f830; /* Light green background */
+}
+
+.text-primary {
+  color: #D1EBD1; /* Light green text */
+}
+
+.btn {
+  display: inline-block;
+  background: #D1EBD1; /* Light green button background */
+  color: black; /* Black button text */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #9ACD9A; 
+}
+
+#features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.clr {
+  clear: both;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.welcome-image {
+  position: relative;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.overlay h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav{
+  margin-left: 80%;
+}
+
+#services {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+.service-box {
+  width: 250px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.service-box h2 {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+#rooms {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#rooms h2 {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.rooms-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.room {
+  width: calc(33.33% - 20px); /* Adjust width as needed */
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.room img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.room h3 {
+  color: #333333;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.room p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.welcome-title {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+#map {
+  margin-top: 20px; /* Adjust spacing from footer */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f2f2f2; /* Add background color */
+}
+
+#services {
+  text-align: center; /* Center-align the content */
+  padding-top: 50px; /* Add top padding */
+}
+
+#services h2 {
+  margin-bottom: 50px; /* Add bottom margin to create space between title and service boxes */
+}
+
+.service-box {
+  width: 250px;
+  margin: 0 auto; /* Center-align the service boxes */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.pop-up {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.image-container:hover .pop-up {
+  visibility: visible;
+}
+.service-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.service-box h2 {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #764b4b;
+  font-size: 16px;
+  line-height: 1.5;
+}
